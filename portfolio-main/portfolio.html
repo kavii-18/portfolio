@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Designer</p>
+            <h1>Hi,I'm <span>Gihani</span> Kavindya</h1>
+        </div>
+    </div>
+
+  </div>
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/im2.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+<p>I'm a passionate web developer with a knack for crafting efficient solutions and a commitment to continuous learning. I love bringing ideas to life through code.</p>
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-content active-tab" id="skills">
+    <ul>
+        <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+        <li><span>Web Development</span><br>Web app development</li>
+    </ul>
+</div>
+<div class="tab-content" id="education">
+    <ul>
+        <li><span>2021</span><br>Diploma in Information Technology at Esoft Metro Campus, Galle</li>
+        <li><span>2021</span><br>Diploma in Academic English at Esoft Metro Campus, Galle</li>
+        <li><span>2022-2024</span><br>Undergraduate, University of Kelaniya</li>
+    </ul>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>I design intuitive, user-centered interfaces that enhance usability and deliver a smooth, engaging experience across platforms.</p>
+                <a href="#">Leran More</a>
+            </div>
+
+            <div>
+                <h2>Web Design</h2>
+                <p>I craft sleek, responsive designs that blend aesthetics with usability, creating seamless experiences across all devices.</p>
+                <a href="#">Leran More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontent = document.getElementsByClassName("tab-content");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (content of tabcontent) {
+            content.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontent = document.getElementsByClassName("tab-content");
+    
+    function opentab(tabname) {
+        // Remove 'active-link' class from all tab links
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        
+        // Remove 'active-tab' class from all tab content sections
+        for (let content of tabcontent) {
+            content.classList.remove("active-tab");
+        }
+        
+        // Add 'active-link' to the clicked tab link
+        event.currentTarget.classList.add("active-link");
+        
+        // Add 'active-tab' to the tab content to display
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
