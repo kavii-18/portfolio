@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a23e7a74f3.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="header">
@@ -26,6 +27,7 @@
     </div>
 
   </div>
+  <!--------about-------->
   <div id="about">
     <div class="container">
         <div class="row">
@@ -52,24 +54,60 @@
         <li><span>2022-2024</span><br>Undergraduate, University of Kelaniya</li>
     </ul>
 </div>
+<!--------services-------->
 <div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
+                <i class="fa-solid fa-code"></i>
                 <h2>UI/UX Design</h2>
                 <p>I design intuitive, user-centered interfaces that enhance usability and deliver a smooth, engaging experience across platforms.</p>
-                <a href="#">Leran More</a>
+                <a href="#">Learn More</a>
             </div>
 
             <div>
+                <i class="fa-solid fa-crop-simple"></i>
                 <h2>Web Design</h2>
                 <p>I craft sleek, responsive designs that blend aesthetics with usability, creating seamless experiences across all devices.</p>
-                <a href="#">Leran More</a>
+                <a href="#">Learn More</a>
             </div>
         </div>
     </div>
 </div>
+<!--------portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images\w2.jpg" >
+                <div class="layer">
+                    <h3>Hotel Management System</h3>
+                    <p>The website allows you to book a hotel with a user friendly interface.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images\w4.jpg" >
+                <div class="layer">
+                    <h3>Car Rental Application</h3>
+                    <p>The app allows to book a vehicle in a seamless way.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images\w5.jpg" >
+                <div class="layer">
+                    <h3>Event Planning Application</h3>
+                    <p>An intuitive event planning app that streamlines scheduling, manages guest lists, and coordinates event details, while connecting you with top event planners for décor, photography, and more.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontent = document.getElementsByClassName("tab-content");
